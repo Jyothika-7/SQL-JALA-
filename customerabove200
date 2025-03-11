@@ -1,0 +1,4 @@
+	SELECT name
+FROM cust
+	WHERE city = ‘San Jose’ or
+	           rating > 200;
