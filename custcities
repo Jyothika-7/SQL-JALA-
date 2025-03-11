@@ -1,0 +1,14 @@
+	SELECT cname
+	FROM cust
+	WHERE city = ( select city 
+		      		     from cust, sales
+	           WHERE cust.snum = sales.snum and   sname = 'Serres');
+	
+	SELECT cname 
+	FROM cust
+	WHERE city in ( select city
+	            		      from cust, orders
+	        WHERE cust.cnum = orders.cnum and  orders.snum in ( select snum 
+	   from sales
+	           WHERE sname = 'Serres'));
+
