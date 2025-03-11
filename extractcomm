@@ -1,0 +1,5 @@
+	SELECT comm 
+	FROM salespeople
+	WHERE snum in (select snum
+	             FROM cust
+WHERE city = ‘London’);
