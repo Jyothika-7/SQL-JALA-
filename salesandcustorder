@@ -1,0 +1,4 @@
+SELECT onum, sname, cname
+FROM orders, cust, sales
+WHERE orders.cnum = cust.cnum and
+	           orders.snum = sales.snum;
