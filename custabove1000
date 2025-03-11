@@ -1,0 +1,4 @@
+	SELECT cnum, cname from cust
+	WHERE cnum > ( select snum+1000 
+	             FROM sales
+WHERE sname = 'Serres');
