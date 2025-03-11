@@ -1,0 +1,5 @@
+	SELECT Onum
+	FROM orders
+	WHERE snum = ( select snum
+	   from sales
+	   where sname = ‘Motika’);
