@@ -1,0 +1,3 @@
+	SELECT sname, cname
+	FROM salespeople, cust
+	WHERE sales.city = cust.city;
